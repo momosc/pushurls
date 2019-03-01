@@ -18,8 +18,8 @@ return [
      * you can find token by your baidu account
      */
     'baidu_config' => [
-        'site' => 'admin.com',
-        'token' => '9A6Cb9gJFba',
+        'site' => 'site url',
+        'token' => 'token',
         'type' => 'amp',
     ],
 

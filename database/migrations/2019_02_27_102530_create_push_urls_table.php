@@ -13,11 +13,11 @@ class CreatePushUrlsTable extends Migration
      */
     public function up()
     {
-        Schema::table('push_urls', function (Blueprint $table) {
+        Schema::create('push_urls', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('search_engine');
             $table->string('url');
-            $table->unsignedTinyInteger('status');
+            $table->integer('status')->nullable();
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
         });
